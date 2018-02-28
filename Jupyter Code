@@ -24,3 +24,24 @@ plot1 = hdu1[1].data
 plot2 = hdu2[1].data
 plot3 = hdu3[1].data
 plot4 = hdu4[1].data
+from matplotlib.pyplot import savefig
+fig1 = plt.plot(plot1, linewidth = 0.4, label = 'APOGEE ID 2M13384267+2723430')
+plt.xlabel('Wavelength [Ångströms]')
+plt.ylabel(r'Flux [$10^{-17}$ erg/cm$^2$/s/Å]')
+plt.legend();
+matplotlib.pyplot.savefig('/Users/mirandaviederman/Desktop/test1.pdf')
+fig2 = plt.plot(plot2, linewidth=0.4, label='APOGEE ID 2M13072813+1653414')
+plt.xlabel('Wavelength [Ångströms]')
+plt.ylabel(r'Flux [$10^{-17}$ erg/cm$^2$/s/Å]')
+plt.legend();
+matplotlib.pyplot.savefig('/Users/mirandaviederman/Desktop/test2.pdf')
+fig3 = plt.plot(plot3, linewidth=0.4, label='APOGEE ID 2M08463782+5729103')
+plt.xlabel('Wavelength [Ångströms]')
+plt.ylabel(r'Flux [$10^{-17}$ erg/cm$^2$/s/Å]')
+plt.legend();
+matplotlib.pyplot.savefig('/Users/mirandaviederman/Desktop/test3.pdf')
+fig4 = plt.plot(plot4, linewidth=0.4, label='APOGEE ID 2M05580827+1345138')
+plt.xlabel('Wavelength [Ångströms]')
+plt.ylabel(r'Flux [$10^{-17}$ erg/cm$^2$/s/Å]')
+plt.legend();
+matplotlib.pyplot.savefig('/Users/mirandaviederman/Desktop/test4.pdf')
